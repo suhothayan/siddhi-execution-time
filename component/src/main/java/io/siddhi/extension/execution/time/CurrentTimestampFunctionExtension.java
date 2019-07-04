@@ -60,8 +60,8 @@ import java.util.Date;
                 @Parameter(name = "timezone",
                         description = "The timezone to which the current time need to be converted. " +
                                 "For example, `Asia/Kolkata`, `PST`. " +
-                                "Get the supported timezone IDs from [here]" +
-                                "(https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html)",
+                                "Get the supported timezone IDs from <a target=\"_blank\" " +
+                                "href=\"https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html\">here</a>.",
                         type = {DataType.STRING},
                         optional = true,
                         defaultValue = "System timezone")
@@ -79,15 +79,16 @@ import java.util.Date;
                         syntax = "time:currentTimestamp('Asia/Kolkata')",
                         description = "Returns current system time converted to 'Asia/Kolkata' timezone " +
                                 "`yyyy-MM-dd HH:mm:ss` format, such as `2019-03-31 19:07:00`. " +
-                                "Get the supported timezone IDs from [here]" +
-                                "(https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html)"
+                                "Get the supported timezone IDs from " +
+                                "<a target=\"_blank\" " +
+                                "href=\"https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html\">here</a>."
                 ),
                 @Example(
                         syntax = "time:currentTimestamp('CST')",
                         description = "Returns current system time converted to 'CST' timezone " +
                                 "`yyyy-MM-dd HH:mm:ss` format, such as `2019-03-31 02:07:00`. " +
-                                "Get the supported timezone IDs from [here]" +
-                                "(https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html)"
+                                "Get the supported timezone IDs from <a target=\"_blank\" " +
+                                "href=\"https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html\">here</a>."
                 )
         }
 )
